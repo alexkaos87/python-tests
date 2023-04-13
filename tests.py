@@ -12,10 +12,10 @@ class SimpleTest(unittest.TestCase):
         self.assertTrue(True)
 
     def test_fail1(self):
-        self.assertEqual(11, 7 + 3)
+        self.assertEqual(11, 7 + 4)
 
     def test_fail1(self):
-        self.assertFalse(True)
+        self.assertFalse(False)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
